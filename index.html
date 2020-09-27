@@ -8,77 +8,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="services-section">
-        <div class="inner-width">
-            <div class="section-title">OUR SERVICES</div>
-            <div class="border"></div>
-            <div class="services-container">
-                <div class="service-box">
-                    <div class="service-icon">
-                        <i class="fa fa-paint-brush" aria-hidden="true"></i>
-                    </div>
-                    <div class="service-title">WEB designs</div>
-                    <div class="service-desc">
-                        this is one of the services provided by this company and we gaurantee you will be getting satisfied with this.
-                    </div>
-                </div>
-
-                <div class="service-box">
-                    <div class="service-icon">
-                        <i class="fa fa-code" aria-hidden="true"></i>
-                    </div>
-                    <div class="service-title">WEB deveopment</div>
-                    <div class="service-desc">
-                        this is one of the services provided by this company and we gaurantee you will be getting satisfied with this.
-                    </div>
-                </div>
-
-                <div class="service-box">
-                    <div class="service-icon">
-                        <i class="fa fa-brush" aria-hidden="true"></i>
-                    </div>
-                    <div class="service-title">responsive designs</div>
-                    <div class="service-desc">
-                        this is one of the services provided by this company and we gaurantee you will be getting satisfied with this.
-                    </div>
-                </div>
-
-                <div class="service-box">
-                    <div class="service-icon">
-                        <i class="fa fa-object-ungroup" aria-hidden="true"></i>
-                    </div>
-                    <div class="service-title">Edit sections</div>
-                    <div class="service-desc">
-                        this is one of the services provided by this company and we gaurantee you will be getting satisfied with this.
-                    </div>
-                </div>
-
-                <div class="service-box">
-                    <div class="service-icon">
-                        <i class="fa fa-database" aria-hidden="true"></i>
-                    </div>
-                    <div class="service-title"> Databases </div>
-                    <div class="service-desc">
-                        this is one of the services provided by this company and we gaurantee you will be getting satisfied with this.
-                    </div>
-                </div>
-
-                <div class="service-box">
-                    <div class="service-icon">
-                        <i class="fab fa-android" aria-hidden="true"></i>
-                    </div>
-                    <div class="service-title">Android</div>
-                    <div class="service-desc">
-                        this is one of the services provided by this company and we gaurantee you will be getting satisfied with this.
-                    </div>
-                </div>
-
-
+    <!-- FF8D27 -->
+    <header>
+        <div class="full_head">
+            <div class="left_head">
+                <img src="logo3.png" alt="">
             </div>
-
-
+            <div class="right_head">
+                <a href="home.html" target="thetarget" >home</a>
+                <a href="about.html" target="thetarget" >about us</a>
+                <a href="services.html" target="thetarget">services</a>
+                <a href="contact.html" target="thetarget" >contact us</a>
+            </div>
         </div>
-    </div>
-    
+    </header>
+
+    <iframe id="frame" name='thetarget' src="logo.PNG" height ="100%" width="100%" >
+    </iframe>
+
+    <footer>
+        <div class="copyright">
+            <span>this is the copyright footer</span>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        // Selecting the iframe element
+        var iframe = document.getElementById("frame");
+        
+        // Adjusting the iframe height onload event
+        iframe.onload = function(){
+            iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+        }
+        </script>
+
+
+
 </body>
 </html>
